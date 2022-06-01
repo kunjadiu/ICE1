@@ -18,12 +18,16 @@ public class CardTrickICE1 {
     {
         Scanner sc =new Scanner(System.in);
         Card[] magicHand = new Card[7]; //Array of object
+        Card luckycard = new Card();
+        luckycard.setValue(7);
+        luckycard.setSuits(clubs);
         for( int i=0;i<magicHand.length;i++)
         {
             Card c1 = new Card();
             c1.setValue(Card.randomValue());//use a method to generate random *13
             c1.setSuits(Card.randomSuits());//random method suit 
             magicHand[i]=c1;
+            
         }
         //step 2:take input 
          System.out.println("Enter Number");

@@ -20,7 +20,7 @@ public class CardTrickICE1 {
         Card[] magicHand = new Card[7]; //Array of object
         Card luckycard = new Card();
         luckycard.setValue(7);
-        luckycard.setSuits(clubs);
+        luckycard.setSuits("clubs");
         for( int i=0;i<magicHand.length;i++)
         {
             Card c1 = new Card();

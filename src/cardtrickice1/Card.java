@@ -8,7 +8,7 @@ package cardtrickice1;
 /** define card value and suits
  * 
  *
- * @author sivagamasrinivasan
+ * @author Utsav Kunjadiya
  */
 public class Card 
 {
@@ -27,7 +27,9 @@ public class Card
     /**
      * @param value the value to set
      */
-    public void setValue(int value) {
+    public void setValue(int value) 
+    {
+        
         this.value = value;
     }
 
@@ -45,7 +47,15 @@ public class Card
         this.suits = suits;
     }
    //number
-    
+    public static int randomValue()
+    {
+        return (int)Math.floor((Math.random()*13)+1);
+    }
     //method for suits
-    
+    public static String randomSuits()
+    {
+        int temp = (int)(Math.random()*4);
+        return SUITS[temp];
+        
+    }
 }
